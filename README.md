@@ -1,81 +1,11 @@
 # Python-Projects-01
- My first Python projects
 
- Question: Three friends need to know which one of them is the richest, the second richest and the last. They also want to know if any two or more people have the same value meaning that none of them is the richest. My job is to help them by writing a code to fufill this purpose.
+Relational Python Problem Project
 
- I would now walk you through the process i used to write this code.
+Question: Three friends need to know which one of them is the richest, the second richest and the last. They also want to know if any two or more people have the same value meaning that none of them is the richest. My job is to help them by writing a program to fufill this purpose.
 
- Firstly I used a pen and paper to analyze the problem.
+The question was gotten from the book: A Python Crash Course Page 50.
 
- Let the three friends be represented with x, y and z. We would now need to spell all possible cases that can occur. 
+The process I used to write this program is detailed in Process.txt.
 
-Case 1: x is richer than y and z. (x > y,z)
-We need to write out all the possible cases than can occur if x is richer then y and z.
-
-    Case 1a: if case 1 is true, it either y is the same as z. (x > y,z and y == z)
-    If case 1a is true, the code should print out "x is richest, but y and z have the same value"
-
-    Case 1b: or y does not have the same value same as z. (x > y,z and y != z)
-    However, if case 1a is not true, then case 1b must be true. Case 1b has two possiblities, lets call it case 1bi and case 1bii
-
-        Case 1bi: If 1b is true, then it is either y is richer than z. (x > y,z and y > z)
-        if case 1bi is true, then "x is the richest followed by y, followed by z" should be displayed on the console.
-
-        Case 1bii: or if z is richer then y. (x > y,z and z > y)
-        if case 1bii is true, then the code should print out " x is the richest, followed by z, followed by y".
-
-Now we have finished writing out all the possible cases that happen when x is richer than y and z, we need to do the same for if y is richest and if z is the richest. The process is similar to when x is the richest as you would see below.
-
-Case 2: y is richer than x and z. (y > x,z)
-We need to write out all the possible cases than can occur if y is richer then x and z.
-
-    Case 2a: if case 2 is true, it either x is the same as z. (y > x,z and x == z)
-    If case 2a is true, the code should print out "y is richest, but x and z have the same value"
-
-    Case 2b: or x does not have the same value same as z. (y > x,z and x != z)
-    However, if case 2a is not true, then case 2b must be true. Case 2b has two possiblities, lets call it case 2bi and case 2bii
-
-        Case 2bi: If 2b is true, then it is either x is richer than z. (y > x,z and x > z)
-        if case 2bi is true, then "y is the richest followed by x, followed by z" should be displayed on the console.
-
-        Case 2bii: or if z is richer then x. (y > x,z and z > x)
-        if case 2bii is true, then the code should print out "y is the richest, followed by z, followed by x".
-
-Now we have finished writing out all the possible cases that happen when y is richer than x and z, we need to do the same for if z is the richest. The process is still similar to case 1 and case 2.
-
-Case 3: z is richer than x and y. (z > x,y)
-We need to write out all the possible cases than can occur if z is richer then x and y.
-
-    Case 3a: if case 3 is true, it either x is the same as y. (z > x,y and x == y)
-    If case 3a is true, the code should print out "z is richest, but x and y have the same value"
-
-    Case 3b: or x does not have the same value same as y. (z > x,y and x != y)
-    However, if case 3a is not true, then case 3b must be true. Case 3b has two possiblities, lets call it case 3bi and case 3bii
-
-        Case 3bi: If 3b is true, then it is either x is richer than y. (z > x,y and x > y)
-        if case 3bi is true, then "z is the richest followed by x, followed by y" should be displayed on the console.
-
-        Case 3bii: or if y is richer then x. (z > x,y and y > x)
-        if case 3bii is true, then the code should print out "z is the richest, followed by y, followed by x".
-
-
-This is good. we have finished writing the possible case for if x,y or z is the richest. However, we have more cases to write for. Imagine if two people have the same value, but they are richer than the third person. We need to accomodate than into our code. Now there are three case where this could happen, lets call them case 4, case 5 and case 6.
-
-Case 4: y and z have the same value and are richer than x. (y == z and y,z > x)
-if case 4 is true, the code should print out "y and z are the richest and have the same value and then x)
-
-Case 5: x and z have the same value and are richer than y. (x == z and x,z > y)
-if case 5 is true, the code should print out "x and z are the richest and have the same value and then y)
-
-Case 6: x and y have the same value and are richer than z. (x == y and x,y > z)
-if case 6 is true, the code should print out "x and y are the richest and have the same value and then y)
-
-
-Okay, great! We have finished writing all the possible case scenerio for two out of three people having the same value and being the richest. Now we also have a situation where all three people have the same values and none is richer. Let call it case 7
-
-Case 7: All three people have the same value and none is the richest (x == y and y == z)
-if case 7 is true, the code should print out "None is the richest because they all have the same value".
-
-
-Now, we have listed out all the posssible cases than can occur we can move foward to write the code. it would help writing the code in the order we have used to spell the problem out above. If you want a pictorial representation of this write up, please check the .jpeg file in this repo.
-
+A pictorial representation of the problem can be viewed in the diagram folder.
