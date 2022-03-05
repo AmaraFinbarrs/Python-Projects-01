@@ -2,22 +2,33 @@
 # Page
 # My Solution Page 50.
 
+
+# the input for the program. The key represent that names of the people while the value represent the money each of them have
 people = {'Amanda': 100, 'Ify': 50, 'Rainbow': 500}
+
+# lets create an empty/zero list that we would use to extract information from our dictionary
 money = [0, 0, 0]
 person = [0, 0, 0]
+
+# to extract the money value.
 n = 0
 for value in people.values():
     money[n] = value
     n += 1
+
+# to extract the name
 n = 0
 for p in people.keys():
     person[n] = p
     n += 1
 
+# to print a list of the people's names
 print(person)
-x, y, z = money
 
+# to print a lsit of the money
+x, y, z = money
 print(money)
+
 
 if x > y and x > z:
     if y == z and y != x:
